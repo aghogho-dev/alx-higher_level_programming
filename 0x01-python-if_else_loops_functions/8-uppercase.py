@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def uppercase(str):
+    new = ""
     for idx, s in enumerate(str):
         if s >= 'a' and s <= 'z':
             s = "{}".format(chr(ord(s) - 32))
 
-        if idx < len(str) - 1:
-            print("{}".format(s), end="")
-        else:
-            print("{}".format(s))
+        new += s
+
+    print("{}".format(new))
