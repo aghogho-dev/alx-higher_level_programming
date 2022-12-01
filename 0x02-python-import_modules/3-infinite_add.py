@@ -9,4 +9,4 @@ if __name__ == '__main__':
     for value in argv[1:]:
         sums += int(value)
 
-    print(f"{sums}")
+    print("{}".format(sums))
