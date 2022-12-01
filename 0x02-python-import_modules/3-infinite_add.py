@@ -4,7 +4,7 @@ if __name__ == '__main__':
 
     args = argv[1:]
     
-    sums: int = 0
+    sums = 0
 
     for value in argv[1:]:
         sums += int(value)
