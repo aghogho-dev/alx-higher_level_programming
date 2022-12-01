@@ -45,4 +45,4 @@ def div(a, b):
     Returns:
         The return value: a / b
     """
-    return a / b
+    return int(a / b)
