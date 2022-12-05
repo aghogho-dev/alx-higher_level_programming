@@ -7,6 +7,6 @@ def print_matrix_integer(matrix=[[]]):
         lens = len(one_list) - 1
         for idx, ele in enumerate(one_list):
             if idx != lens:
-                print("{}".format(ele), end=" ")
+                print("{:d}".format(ele), end=" ")
             else:
-                print("{}".format(ele))
+                print("{:d}".format(ele))
