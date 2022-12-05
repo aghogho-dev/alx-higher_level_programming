@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     for one_list in matrix:
         if not one_list:
-            print()
+            print("{}".format(""))
             break
         lens = len(one_list) - 1
         for idx, ele in enumerate(one_list):
