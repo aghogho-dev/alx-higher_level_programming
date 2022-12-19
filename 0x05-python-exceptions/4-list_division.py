@@ -13,6 +13,8 @@ def list_division(my_list_1, my_list_2, list_length):
         except TypeError:
             ans = 0
             print("wrong type")
+        except Exception:
+            ans = 0
         finally:
             answer.append(ans)
 
