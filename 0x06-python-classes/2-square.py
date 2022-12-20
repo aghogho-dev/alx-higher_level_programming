@@ -3,14 +3,13 @@
 
 
 class Square:
-    """Inside the Square class."""
-
+    """The class Square."""
 
     def __init__(self, size=0):
-        """The initialization of Square.
+        """Initialize a new instance of Square.
 
         Args:
-            size (int): The square size.
+            size (int): The Square size.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
