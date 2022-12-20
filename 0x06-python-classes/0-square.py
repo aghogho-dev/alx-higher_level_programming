@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""An empty class called Square module"""
+"""A class called Square."""
+
 
 class Square:
-    """The Square class is an empty class with no attributes"""
+    """The Square class docstring"""
     pass
