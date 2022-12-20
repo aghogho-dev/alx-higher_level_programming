@@ -7,5 +7,9 @@ class Square:
 
 
     def __init__(self, size):
-        """Initialization docstring"""
+        """Initialization docstring
+
+        Args:
+            size (int): The square size.
+        """
         self.__size = size
