@@ -3,13 +3,12 @@
 
 
 class Square:
-    """The Square class docstring."""
-
+    """The Square class."""
 
     def __init__(self, size):
-        """Initialization docstring
+        """Initialize the class Square.
 
         Args:
-            size (int): The square size.
+            size (int): Size of the square."
         """
         self.__size = size
