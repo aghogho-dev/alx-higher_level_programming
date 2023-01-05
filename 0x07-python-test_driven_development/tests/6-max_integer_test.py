@@ -17,7 +17,9 @@ class TextMaxInteger(unittest.TestCase):
         self.float_list = max_integer([9.1, 10.2, 9.8])
         self.int_float_list = max_integer([10.1, 11, 11.1])
         self.single_list = max_integer([12])
-
+        self.str_list = max_integer(["abc", "edf", "zig"])
+        self.one_string = max_integer("cpython")
+        self.empty_string = max_integer("")
 
     def test_sorted_list(self):
         """Inside test_sorted_list method."""
@@ -42,6 +44,18 @@ class TextMaxInteger(unittest.TestCase):
     def test_single_list(self):
         """Inside single list method."""
         self.assertEqual(self.single_list, 12)
+
+    def test_str_list(self):
+        """Inside str list method."""
+        self.assertEqual(self.str_list, "zig")
+
+    def test_one_string(self):
+        """Inse one_string method."""
+        self.assertEqual(self.one_string, "y")
+
+    def test_empty_string(self):
+        """Inside empty str method."""
+        self.assertEqual(self.empty_string, None)
 
 if __name__ == '__main__':
     unittest.main()
