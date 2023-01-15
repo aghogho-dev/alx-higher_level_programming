@@ -140,3 +140,7 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
+    
+    def to_dictionary(self):
+        """Dict representation."""
+        return {'x': self.x, 'y': self.y,  'id': self.id, 'width': self.width, 'height': self.height}
