@@ -1,4 +1,5 @@
--- Subquery
-SELECT id, name FROM cities
-WHERE state_id IN (select id FROM states WHRERE name = "California")
-ORDER BY 1;
+-- Implicit join
+SELECT cities.name FROM cities, states
+WHERE cities.state_id = states.id
+	AND states.name = 'California'
+ORDER BY cities.id ASC;
