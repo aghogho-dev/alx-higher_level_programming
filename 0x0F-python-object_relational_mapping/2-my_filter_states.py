@@ -14,8 +14,8 @@ if __name__ == '__main__':
             db=argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM `states` \
-            WHERE `name` = '{}'".format(argv[4]))
+    query = f"SELECT * FROM `states` WHERE `name` = '{argv[4]}';"
+    cur.execute(query)
     list(map(print, sorted(cur.fetchall(), key=lambda x: x[0])))
     cur.close()
     db.close()
