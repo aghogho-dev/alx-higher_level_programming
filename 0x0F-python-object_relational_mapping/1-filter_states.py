@@ -14,7 +14,7 @@ if __name__ == '__main__':
             db=argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM `states` WHERE `name` LIKE 'N%'")
+    cur.execute("SELECT * FROM `states` WHERE `name` LIKE 'N%';")
     list(map(print, sorted(cur.fetchall(), key=lambda x: x[0])))
     cur.close()
     db.close()
