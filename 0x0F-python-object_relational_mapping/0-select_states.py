@@ -8,6 +8,6 @@ if __name__ == '__main__':
             user=argv[1], passwd=argv[2], db=argv[3])
     cur = db.cursor()
     cur.execute("SELECT * FROM `states`")
-    list(map(print, cur.fetchall()))
+    list(map(print, sorted(cur.fetchall(), key=lambda x: x[0])))
     cur.close()
     db.close()
